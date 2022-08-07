@@ -1,0 +1,64 @@
+Para mostrar todas as branches de um projeto podemos utilizar o Comando: 
+git branch 
+para criar uma branch podemos utilizar o comando
+git branch <nome da branch>
+
+
+para ir para a nova branch criada podemos utilizar o comando
+git checkout <nome da branch>
+o editor irá mostrar em que branch você está
+se fizermos uma modificação nos arquivos e executarmos o commit
+git add .
+git commit -m ‘Inclusão de teste’
+o sistema irá fazer a alteração do arquivo na branch de teste abrindo uma ramificação... o arquivo na master continua do mesmo jeito que estava
+para excluir a branch devemos ir para o branch master
+git checkout master
+e depois executar o comando de deleção
+git branch -D <nome da branch>
+para criar uma nova branch e ao mesmo tempo mudar para esta nova branch criada eu posso executar o comando:
+git checkout –b <nome da nova branch>
+
+Merge
+------
+Para fazer o teste do merge iremos primeiramente criar uma branch com o comando:
+Git checkout -b vostok1
+Os sistema irá se colocar na branck vostok 1
+Em seguida executaremos um comando para criar o arquivo a seguir
+Touch vostok1.txt
+Na sequencia fiz uma alteração no editor para incluir informações
+Na sequencia executar o comando para incluir arquivo na área de estaging
+Git add vostok1.txt
+Executar o commit
+Git commit -m ‘Inclusão de Vostok1’
+Ir agora para a branch master
+Git checkout master
+Poderá verificar então que arquivo vostok1. Txt não existe na master
+Para juntar as branchs devemos fazer o merge de dentro da master
+Git merge Vostok1
+Para verificar as mudanças podemos executar
+Git log
+
+Criada pasta com 
+Mkdir <nome da nova pasta>
+Cd <nome da nova pasta>
+Executar o comando para gerar a master
+Git init
+Criar novo arquivo
+Touch <nome do novo arquivo>
+Abrir o vscode para adicionar texto
+Code .
+Colocar aquivo na área de staging
+Git add .
+Fazer o commint
+Git commit -m ‘Descrição 01’
+Criar nova branch
+Git checkout -b voyager1
+Fazer uma alteração no arquivo voyager1.txt
+Adicionar arquivo para área de staging
+Git add voyager1.txt
+Efetuar o commit 
+Git commit -m ‘Incusão de data de lançamento’
+Ir para a master
+Git checkout master
+Efetuar o merge
+Git merge voyager1

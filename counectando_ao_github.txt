@@ -1,0 +1,32 @@
+Criar um diretório e clonar o projeto com 
+Git clone https://github.com/facebook/create-react-app.git
+
+ 
+Baixar atualizações de um projeto
+Quando criamos o projeto nós utilizamos os comandos abaixo:
+Git add .
+Git commit -m ‘Inclusão do README’
+Git remote add origin https://github.com/marcelocostarosa/therethere.git
+Git push origin master
+
+Criando agora uma nova branch a partir do local
+Git checkout – b testing
+Agora se eu fizer mudanças no arquivo do vscode eu estarei fazendo mudanças na branch e não no main
+E fizer um 
+Git add .
+Git commit -m ‘changing local in branch testing’
+Agora criando a branch plant no repositório remoto git
+Git push origin testing 
+ 
+Criando um gitignore com o comando 
+touch .gitignore
+se eu criar por dentro do vscode um arquivo de nome “meu-password.txt” com o contéudo “1234” por exemplo (que será a aminha password) e executar o comando
+git status
+o sistema avisará que os 2 arquivos não estão sendo trackeados
+se eu colocar dentro do .gitignore o nome do arquivo meu-password.txt e novamente executar o comando git status o sistema simplesmente não irá mais verificar o arquivo meu-password.txt... ele será ignorado
+executando agora os comandos:
+git add .gitignore
+git commit -m ‘Inclusão do gitignore’
+git push origin main
+o sistema irá subir o arquivo gitignore para o repositório
+Ao fazermos uma verificação dos arquivos do diretório gitignore do repositório podemos verificar várias regras para não subir arquivos como os exemplo da tela abaixo.

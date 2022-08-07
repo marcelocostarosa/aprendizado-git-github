@@ -1,1 +1,30 @@
 Testde de Arquivo de introducao
+
+Realizando o primeiro commit
+Comandos git
+
+Para criar um arquivo vazio utilizamos o comando touch
+touch apollo11.txt
+
+Se quiser modificar/editar o arquivo podemos utilizar o comando nano
+nano apollo11.txt
+
+se der um comando git status veremos que existe arquivo mas que ele não está sendo monitorado
+git status
+
+se quiser monitorar o arquivo devemos utilizar o comando git add
+git add apollo11.txt
+
+se rodarmos o git status agora ele retornará que existe arquivo 
+
+depois que colocamos o arquivo para uma área provisória podemos agora usa o commit a seguir:
+git commit -m “Criação do Arquivo Apollo 11”
+
+se executarmos agora o git status o sistema retornará que não há mais nada a ser modificado
+git status
+
+code . abre o vscode
+podemos verificar em time line as modificações
+
+
+

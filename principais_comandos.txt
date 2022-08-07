@@ -1,0 +1,35 @@
+Visualizando os logs
+Git log
+Mostrando apenas as alterações efetuadas
+ Git log --pretty=oneline 
+Mostrando apenas a última linha alterada
+Git log --pretty=oneline -1
+Mostrando detalhes das modificações
+Git log –stat
+ 
+Visualizando as diferenças
+Comando para verificar as diferenças em todos os arquivos
+Git diff
+Comando para verificar diferenças em 1 arquivo específico
+Git diff apollo11.txt
+Comando para mostrar apenas os arquivos que possuem diferenças
+Git diff --name-only
+Para colocar todos os arquivos para o staging de uma só vez utilizamos o comando
+Git add .
+Para fazer um commit massivo podemos executar o comandop
+Git commit -m ‘Inclusão de informações para os 2 arquivos’
+ 
+Desfazendo alterações e ooutros comandos
+Depois que foi feito o commit, lembramos que deveríamos fazer alteração no outr arquivo tb
+Nesse caso podemos executar os comandos abaixo:
+Git add apollo12.txt
+Git commit --amend
+O comando amend abrirá o arquivo do último commit para ser modificado.... precisa relembrar os comandos de edição de arquivo unix :qwe
+CTRL O parece ser para gravar
+
+Depois que coloquei um arquivo no staging , eu posso voltar para a versão anterior utilizando o comando 
+Git reset HEAD <nome do arquivo>
+
+Apesar de ter retirado o arquivo da área de staging as modificações feitas no arquivo continuam. Para eu descartar as informações e voltar arquivo para última versão “commitada” eu devo executar o comando
+Git checkout -- <nome do arquivo>
+ 

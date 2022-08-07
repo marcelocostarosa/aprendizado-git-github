@@ -1,0 +1,3 @@
+Não esquecer de Criar conta no github
+Conhecendo o Terminal
+Usando o gitbash
